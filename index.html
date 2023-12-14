@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="bt" onclick="generateQuote()">Generate Quote</button>
+<h2 id="quote"></h2>
+    <script>
+
+var quotes = [
+"The only way to do great work is to love what you do.- Steve Jobs",
+"Together we can change the world, just one random act of kindness at a time. ...",
+"Goals transform a random walk into a chase.- Mihaly Csikszentmihalyi",
+"Goals transform a random walk into a chase.- Mihaly Csikszentmihalyi",
+"Random chance plays a huge part in everybody's life.- Gary Gygax",
+"The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt"
+];
+function generateQuote(){
+    var quoteElement = document.getElementById("quote");
+    var randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteElement.textContent = quotes[randomIndex];
+}
+
+    </script>
+</body>
+</html>

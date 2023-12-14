@@ -1,0 +1,14 @@
+.bt{
+    background-color: black;
+    color: aqua;
+    width: 10%;
+    height: 8vh;
+    border: 3px solid aqua;
+    margin-top: 200px;
+
+}
+
+body{
+    text-align: center;
+    background-color: rgb(35, 229, 243);
+}
